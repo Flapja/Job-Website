@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.animation {
+  @apply hover:after:w-full inline-block relative after:duration-500 after:ease-in-out after:h-1 after:w-0 after:m-auto after:bg-main-green after:left-0 after:content-between after:-bottom-2 after:absolute;
+}
+
+.button {
+  @apply px-4 py-3 font-bold bg-main-yellow border-2 border-solid border-main-yellow text-main-green rounded-sm mt-10 hover:text-main-yellow hover:bg-transparent duration-500;
+}
+
+.cards {
+  @apply bg-main-green rounded-sm text-white basis-1/14 px-4 py-3 cursor-pointer hover:bg-main-white hover:text-main-green duration-300;
+}
+
+.top {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.last {
+  transform: translateY(50px);
+  opacity: 0.5;
+}
+
+.card {
+  @apply opacity-50 translate-y-20;
+}
+
+.change {
+  @apply opacity-100 translate-y-0;
+}
+
+.features {
+  @apply flex flex-col space-y-4 px-4 py-4 basis-1/14 border-2 border-solid border-main-green rounded-lg cursor-pointer hover:-translate-y-3 duration-300;
+}
+
+.acco {
+  @apply flex items-center relative space-x-3 lg:justify-start basis-1/2 text-main-white pr-10;
+}
